@@ -43,7 +43,20 @@ a:hover { color: var(--purple); }
   background: rgba(255, 255, 255, .86); backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
+.brands { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .brand img { height: 34px; width: auto; display: block; }
+.brand-sep { color: var(--navy); opacity: .45; font-size: 18px; line-height: 1; }
+.client-logo { height: 52px; width: auto; display: block; }
+.home .brand-sep { color: #E7ECF7; }
+.home .client-logo { filter: invert(1); }
+@media (max-width: 480px) {
+  .brands { gap: 8px; }
+  .brand img { height: 26px; }
+  .client-logo { height: 38px; }
+  .topbar { gap: 10px; }
+  .topbar nav { gap: 2px; }
+  .topbar nav a { padding: 8px 8px; font-size: 14px; }
+}
 .topbar nav { display: flex; gap: 6px; }
 .topbar nav a {
   color: var(--navy); text-decoration: none; font-weight: 500; font-size: 15px;
